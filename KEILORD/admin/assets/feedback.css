@@ -1,0 +1,50 @@
+/* Admin Feedback Page */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #a5a5a5;
+  margin: 0;
+  padding: 2em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 1.5em;
+}
+
+/* Feedback Card */
+.feedback-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding: 1.5em;
+  margin-bottom: 2em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-card strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.feedback-card p {
+  margin: 0.5em 0;
+  font-size: 1em;
+  color: #ff0000;
+  line-height: 1.5;
+}
+
+.feedback-card small {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.85em;
+  color: #999;
+}
+
+/* Optional: Add a subtle border for separation */
+.feedback-card:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}

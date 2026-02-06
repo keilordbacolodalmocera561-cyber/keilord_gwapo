@@ -1,0 +1,104 @@
+/* Admin Dashboard Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #a5a5a5;
+  color: #333;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #1f2937; /* dark header */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.admin-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1.5em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+  color: #ff6b6b;
+}
+
+.dashboard-main {
+  padding: 2em;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.card p {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.chart-container h2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+}

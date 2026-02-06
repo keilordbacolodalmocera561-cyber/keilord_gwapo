@@ -1,0 +1,153 @@
+/* Admin Edit Products Page Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+   background-color: #a5a5a5;
+  color: #333;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #1f2937; /* dark header */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.admin-header nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1.5em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.admin-header nav a:hover,
+.admin-header nav a.active {
+  color: #ff6b6b;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #111;
+}
+
+.product-edit {
+  background-color: #fff;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.product-edit input[type="text"],
+.product-edit input[type="number"],
+.product-edit input[type="file"] {
+  padding: 0.75em 1em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 120px;
+  transition: border-color 0.3s;
+}
+
+.product-edit input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.product-edit button {
+  padding: 0.7em 1.2em;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-edit button[name="update"] {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.product-edit button[name="update"]:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.product-edit button[name="delete"] {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.product-edit button[name="delete"]:hover {
+  background-color: #ff3b3b;
+  transform: translateY(-2px);
+}
+
+.product-filter {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.product-filter input[type="text"] {
+  flex: 1;
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.product-filter input[type="text"]:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.product-filter button {
+  padding: 0.7em 1.2em;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-filter button:hover {
+  background-color: #ff3b3b;
+}
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .product-edit {
+    flex-direction: column;
+  }
+}

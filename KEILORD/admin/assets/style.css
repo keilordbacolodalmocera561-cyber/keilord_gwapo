@@ -1,0 +1,131 @@
+/* Admin Dashboard Orders Page */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+   background-color: #a5a5a5;
+  color: #333;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #1f2937;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.admin-header nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1.5em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.admin-header nav a:hover,
+.admin-header nav a.active {
+  color: #ff6b6b;
+}
+
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: #111;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+}
+
+th {
+  background-color: #1f2937;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tr:hover {
+  background-color: #e0e7ff;
+}
+
+td form {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+td select {
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+}
+
+td button {
+  padding: 0.4em 0.8em;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+td button:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+  table, tr, th, td {
+    display: block;
+  }
+  tr {
+    margin-bottom: 1em;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 1em;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+  }
+}

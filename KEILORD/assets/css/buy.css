@@ -1,0 +1,120 @@
+ body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+    .section-title {
+      text-align: center;
+      color: red;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+    .checkout-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    .checkout-table th, .checkout-table td {
+      border-bottom: 1px solid #eee;
+      padding: 15px;
+      text-align: center;
+    }
+    .checkout-table th {
+      background-color: #f9f9f9;
+      font-weight: 600;
+    }
+    .checkout-table tbody tr:hover {
+      background-color: #fff0f0;
+    }
+    .checkout-table img {
+      width: 80px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .checkout-summary {
+      text-align: right;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background: #fdfdfd;
+    }
+    .checkout-summary p {
+      margin: 8px 0;
+    }
+    .checkout-form {
+      margin-top: 20px;
+    }
+    .checkout-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .checkout-form input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    .payment-methods {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    .payment-methods label {
+      flex: 1 1 30%;
+      background: #fff0f0;
+      padding: 15px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .payment-methods input[type="radio"] {
+      display: none;
+    }
+    .payment-methods label:hover {
+      border-color: red;
+      background: #ffe5e5;
+    }
+    .payment-methods input[type="radio"]:checked + span {
+      font-weight: bold;
+    }
+    .payment-methods input[type="radio"]:checked + label {
+      border-color: red;
+      background: #ffe5e5;
+    }
+    .checkout-form button {
+      width: 100%;
+      padding: 15px;
+      background-color: red;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .checkout-form button:hover, checkout-form button:active {
+      background-color: darkred;
+    }
+    @media (max-width: 768px) {
+      .payment-methods {
+        flex-direction: column;
+      }
+    }
